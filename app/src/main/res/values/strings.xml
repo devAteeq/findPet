@@ -1,0 +1,151 @@
+<resources>
+    <string name="app_name">FindPet</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="todo">TODO</string>
+    <string name="doppt">Doppt</string>
+    <string name="let_s_get_started">Let\'s Get Started!</string>
+    <string name="lets_dive_into_your_account">Lets dive into your account</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="continue_with_facebook">Continue with Facebook</string>
+    <string name="_1_4">1/4</string>
+    <string name="tell_us_about_your_self">Tell us about your self</string>
+    <string name="disc">Description</string>
+    <string name="pet_owner_or_organization">Pet owner or Organization</string>
+    <string name="pet_adopter">Pet Adopter</string>
+    <string name="cont">Continue</string>
+    <string name="_2_4">2/4</string>
+    <string name="profile_info">Profile info</string>
+    <string name="full_name">Full Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="finish">Finish</string>
+    <string name="loading">Loading</string>
+    <string name="enter_password">Enter password</string>
+    <string name="enter_email">Enter email</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="sign_in">Sign in</string>
+    <string name="create_an_account">Create an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="home">Home</string>
+    <string name="maps">Maps</string>
+    <string name="favourites">Favourites</string>
+    <string name="account">Account</string>
+    <string name="my_profile">My Profile</string>
+    <string name="notifications">Notifications</string>
+    <string name="account_security"><![CDATA[Account & Security]]></string>
+    <string name="help_support"><![CDATA[Help & Support]]></string>
+    <string name="invite_friends">Invite Friends</string>
+    <string name="logout">Logout</string>
+    <string name="update">Update</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="your_posts">Your Posts</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="are_you_sure_you_want_to_logout">Are you sure you want to logout?</string>
+    <string name="cancel">Cancel</string>
+    <string name="add_post">Add Post</string>
+    <string name="yes_logout">Yes, Logout</string>
+    <string name="create_post">Create post</string>
+    <string name="name">Name</string>
+    <string name="write_a_description">Write a description</string>
+    <string name="category">Category</string>
+    <string name="gender">Select gender</string>
+    <string name="age">Select age</string>
+    <string name="pick_location">Pick Location</string>
+    <string name="location">Location</string>
+    <string name="done">Done</string>
+    <string name="post">Post</string>
+    <string name="post_details">Post Details</string>
+    <string name="post_gender">Gender</string>
+    <string name="post_age">Age</string>
+    <string name="edit_post">Edit post</string>
+    <string name="delete_post">Delete post</string>
+    <string name="update_post">Update Post</string>
+    <string name="see_all">See all</string>
+    <string name="adopt">Adopt</string>
+    <string name="comment">Comment</string>
+    <string name="comments">Comments</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+    <string name="see_post">See post</string>
+    <string name="sorry_no_posts_found">Sorry, no posts found</string>
+    <string name="pet_search">Pet Search</string>
+    <string name="pet_type">Pet Type</string>
+    <string name="gender_search">Gender</string>
+    <string name="optional">(Optional)</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="age_search">Age</string>
+    <string name="child">Child</string>
+    <string name="adult">Adult</string>
+    <string name="search">Search</string>
+    <string name="search_result">Search Result</string>
+    <string name="not_favourite">not favourite</string>
+    <string name="change_password">Change Password</string>
+    <string name="deactivate_account">Deactivate Account</string>
+    <string name="temporarily_deactivate_your_account_easily_reactivate_when_you_re_ready">Temporarily deactivate your account. Easily reactivate when you\'re ready.</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="permanently_remove_your_account_and_data_proceed_with_caution">Permanently remove your account and data proceed with caution</string>
+    <string name="account_password">Account Password</string>
+    <string name="account_name">Account Name</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="contact_support">Contact Support</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="information_collection">1. Information Collection:</string>
+    <string name="the_app_collect_user_provided_information_during_account_creation_and_adoption_applications">The app collect user-provided information during account creation and adoption applications.</string>
+    <string name="information_usage">2. Information Usage:</string>
+    <string name="user_data_is_used_for_improving_app_services">User data is used for improving app services.</string>
+    <string name="information_sharing">3. Information Sharing:</string>
+    <string name="limited_information_is_shared_with_shelters_during_adoption_applications">Limited information is shared with shelters during adoption applications.</string>
+    <string name="security_measures">4. Security Measures:</string>
+    <string name="this_app_employs_security_measures_to_protect_user_data">This app employs security measures to protect user data.</string>
+    <string name="acceptance_of_terms">1. Acceptance of Terms:</string>
+    <string name="by_using_app_users_accept_and_agree_to_these_terms_of_services">BY using app, users accept and agree to these terms of services.</string>
+    <string name="_2_eligibility">2. Eligibility:</string>
+    <string name="users_must_be_at_least_18_years_old_or_have_parental_consent_to_use_this_app">Users must be at least 18 years old or have parental consent to use this app.</string>
+    <string name="_3_user_accounts">3. User Accounts:</string>
+    <string name="users_are_responsible_for_maintaining_the_confidentiality_of_their_account">Users are responsible for maintaining the confidentiality of their account.</string>
+    <string name="users_agree_not_to_engage_in_harmful_activities_including_unauthorized_access_or_data_manipulation">Users agree not to engage in harmful activities. Including unauthorized access or data manipulation.</string>
+    <string name="_4_user_conduct">4. User Conduct:</string>
+    <string name="cats">cats</string>
+</resources>

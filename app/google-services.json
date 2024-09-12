@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "228513292638",
+    "project_id": "adoptpet-c6587",
+    "storage_bucket": "adoptpet-c6587.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:228513292638:android:2d897afe129b7d3c6f2fcf",
+        "android_client_info": {
+          "package_name": "com.example.findpet"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCC0YdpRTBRVFpWNora4ji6hpK-FZhyHOM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:228513292638:android:7b1a16baa642dc696f2fcf",
+        "android_client_info": {
+          "package_name": "com.example.findpetadmin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCC0YdpRTBRVFpWNora4ji6hpK-FZhyHOM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

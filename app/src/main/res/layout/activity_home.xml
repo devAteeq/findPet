@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.HomeActivity">
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/appBarLayout">
+
+    </FrameLayout>
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/white"
+        app:fabCradleMargin="@dimen/_16sdp"
+        app:fabCradleRoundedCornerRadius="@dimen/_40sdp">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@color/white"
+            app:itemActiveIndicatorStyle="@null"
+            app:itemIconSize="@dimen/_15sdp"
+            app:itemIconTint="@drawable/bottom_bg"
+            app:itemPaddingTop="@dimen/_23sdp"
+            app:itemRippleColor="@color/white"
+            app:itemTextColor="@drawable/bottom_bg"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_menu"
+            tools:ignore="VisualLintBottomNav">
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2sdp"
+                android:layout_above="@id/appBarLayout"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@color/orange" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/btnAddPost"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/fab_bg"
+                    android:clickable="true"
+                    android:contentDescription="@string/todo"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/icon_add"
+                    app:tint="@color/orange"
+                    tools:ignore="ImageContrastCheck,VisualLintBounds" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:fontFamily="@font/bold"
+                    android:text="@string/add_post"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp"
+                    tools:ignore="TextSizeCheck,VisualLintBounds" />
+
+            </LinearLayout>
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+</RelativeLayout>

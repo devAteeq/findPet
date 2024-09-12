@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="orange">#EC9126</color>
+    <color name="gray">#888282</color>
+    <color name="light_gray">#D3D3D3</color>
+
+    <color name="card_selected_color">#EC9126</color> <!-- Example color -->
+    <color name="selected_stroke_color">#EC9126</color> <!-- Example color -->
+    <color name="card_default_color">#808080</color> <!-- Example color -->
+    <color name="default_stroke_color">#D3D3D3</color>
+    <color name="red">#FA0303</color>
+    <color name="age_card_color">#D7F0FB</color>
+    <color name="light_white">#FDF9F9</color> <!-- Example color -->
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_160sdp"
+    android:elevation="@dimen/_5sdp"
+    app:cardBackgroundColor="@color/orange"
+    app:strokeColor="@color/orange"
+    tools:ignore="UnusedAttribute">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_5sdp">
+
+        <ImageView
+            android:id="@+id/bannerImage"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/todo"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/bannerTitle"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_20sdp"
+            android:fontFamily="@font/bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sdp" />
+
+        <TextView
+            android:id="@+id/bannerMessage"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bannerTitle"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp" />
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

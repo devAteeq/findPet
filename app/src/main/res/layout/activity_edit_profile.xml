@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.EditProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:padding="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:id="@+id/txtUpdateProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/bold"
+            android:text="@string/edit_profile"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp"
+            tools:ignore="RelativeOverlap,TextSizeCheck" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_below="@id/txtUpdateProfile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:src="@drawable/icon_person"
+            app:civ_border_color="@color/orange"
+            app:civ_border_width="@dimen/_1sdp"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/imgEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgProfile"
+            android:layout_gravity="center"
+            android:layout_marginStart="-23dp"
+            android:layout_marginTop="-19dp"
+            android:layout_toEndOf="@id/imgProfile"
+            android:background="@drawable/edit_bg"
+            android:contentDescription="@string/todo"
+            android:padding="@dimen/_1sdp"
+            android:rotation="270"
+            android:src="@drawable/icon_edit"
+            android:visibility="gone"
+            tools:ignore="ImageContrastCheck" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgProfile"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:hint="@string/full_name"
+            app:boxStrokeColor="@color/orange"
+            app:hintTextColor="@color/orange">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:fontFamily="@font/regular"
+                android:inputType="text"
+                android:textCursorDrawable="@color/orange"
+                tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnUpdateProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layoutName"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/bold"
+            android:text="@string/edit_profile"
+            android:textColor="@color/white"
+            tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck,VisualLintButtonSize" />
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

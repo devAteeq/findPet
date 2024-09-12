@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_10sdp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgYourComment"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_centerVertical="true" />
+
+
+    <TextView
+        android:id="@+id/commentYourName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_toEndOf="@id/imgYourComment"
+        android:fontFamily="@font/medium"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp" />
+
+    <TextView
+        android:id="@+id/commentYourComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/commentYourName"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_toStartOf="@id/imgMenu"
+        android:layout_toEndOf="@id/imgYourComment"
+        android:fontFamily="@font/regular"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10sdp" />
+
+    <ImageView
+        android:id="@+id/imgMenu"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/icon_menu" />
+
+</RelativeLayout>

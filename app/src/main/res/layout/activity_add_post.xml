@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.AddPostActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/iconBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:id="@+id/txtCreatePost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iconBack"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/bold"
+            android:text="@string/create_post"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp"
+            tools:ignore="TextSizeCheck" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardPost"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_below="@id/txtCreatePost"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:cardBackgroundColor="@color/light_gray"
+            app:cardCornerRadius="@dimen/_17sdp"
+            app:strokeColor="@color/light_gray">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgPost"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/icon_file"
+                    tools:ignore="ImageContrastCheck" />
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/multipleImgViewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <ImageView
+            android:id="@+id/imgPick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardPost"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-5dp"
+            android:background="@drawable/icons_bg"
+            android:contentDescription="@string/todo"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/icon_edit"
+            app:tint="@color/orange"
+            tools:ignore="ImageContrastCheck" />
+
+        <me.relex.circleindicator.CircleIndicator3
+            android:id="@+id/circleIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp"
+            android:layout_below="@id/cardPost"
+            app:ci_drawable="@drawable/selected_circle_bg"
+            app:ci_drawable_unselected="@drawable/unselected_circle_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/circleIndicator"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name"
+                app:boxBackgroundColor="@color/white"
+                app:boxStrokeColor="@color/orange"
+                app:hintTextColor="@color/orange">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtPetName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/regular"
+                    android:inputType="text"
+                    android:textCursorDrawable="@color/orange"
+                    tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:hint="@string/gender"
+                app:boxBackgroundColor="@color/white"
+                app:boxStrokeColor="@color/orange"
+                app:hintTextColor="@color/orange">
+
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                    android:id="@+id/edtGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                    android:popupBackground="@color/white"
+                    tools:ignore="SpeakableTextPresentCheck,VisualLintTextFieldSize" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:hint="@string/age"
+                app:boxBackgroundColor="@color/white"
+                app:boxStrokeColor="@color/orange"
+                app:hintTextColor="@color/orange">
+
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                    android:id="@+id/edtAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                    android:popupBackground="@color/white"
+                    tools:ignore="SpeakableTextPresentCheck,VisualLintTextFieldSize" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <TextView
+                    android:id="@+id/txtLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/txt_bg"
+                    android:fontFamily="@font/regular"
+                    android:padding="@dimen/_14sdp"
+                    android:text="@string/location"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    tools:ignore="TextSizeCheck" />
+
+                <ImageView
+                    android:id="@+id/iconDropDown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/todo"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/icon_drop_down"
+                    tools:ignore="ImageContrastCheck" />
+
+            </RelativeLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:boxBackgroundColor="@color/white"
+                app:boxStrokeColor="@color/orange"
+                app:hintTextColor="@color/orange">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtPostDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/regular"
+                    android:gravity="top|start"
+                    android:hint="@string/write_a_description"
+                    android:inputType="text"
+                    android:minHeight="@dimen/_100sdp"
+                    android:minLines="5"
+                    android:textCursorDrawable="@color/orange"
+                    tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/medium"
+                android:text="@string/category"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                tools:ignore="TextSizeCheck" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:singleSelection="true">
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <Button
+                android:id="@+id/btnPost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/bold"
+                android:text="@string/post"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"
+                tools:ignore="VisualLintButtonSize" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

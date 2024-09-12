@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/_10sdp"
+    tools:context=".activities.SearchFilterActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btnSearchPet">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/layoutHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="UselessParent">
+
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/icon_back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/bold"
+                    android:text="@string/pet_search"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15sdp"
+                    tools:ignore="TextSizeCheck" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtPetType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutHeader"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:fontFamily="@font/bold"
+                android:text="@string/pet_type"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp"
+                tools:ignore="TextSizeCheck" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroupPetType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtPetType"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:singleSelection="true">
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <TextView
+                android:id="@+id/txtGenderSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chipGroupPetType"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:fontFamily="@font/bold"
+                android:text="@string/gender_search"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chipGroupPetType"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_21sdp"
+                android:layout_toEndOf="@id/txtGenderSearch"
+                android:fontFamily="@font/regular"
+                android:text="@string/optional"
+                android:textColor="@color/light_gray"
+                android:textSize="@dimen/_11sdp"
+                tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroupGenderSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtGenderSearch"
+                android:layout_marginTop="@dimen/_3sdp"
+                app:singleSelection="true">
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <TextView
+                android:id="@+id/txtAgeSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chipGroupGenderSearch"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:fontFamily="@font/bold"
+                android:text="@string/age_search"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chipGroupGenderSearch"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_22sdp"
+                android:layout_toEndOf="@id/txtAgeSearch"
+                android:fontFamily="@font/regular"
+                android:text="@string/optional"
+                android:textColor="@color/light_gray"
+                android:textSize="@dimen/_11sdp"
+                tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroupAgeSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtAgeSearch"
+                android:layout_marginTop="@dimen/_3sdp"
+                app:singleSelection="true">
+
+            </com.google.android.material.chip.ChipGroup>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btnSearchPet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/bold"
+        android:text="@string/search"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12sdp"
+        tools:ignore="TextSizeCheck,TextContrastCheck,VisualLintButtonSize" />
+
+</RelativeLayout>

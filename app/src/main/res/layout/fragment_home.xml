@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragments.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:padding="@dimen/_10sdp">
+
+        <RelativeLayout
+            android:id="@+id/layoutSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/icon_foot"
+                app:tint="@color/orange"
+                tools:ignore="ImageContrastCheck" />
+
+            <ImageView
+                android:id="@+id/imgNotification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/icons_bg"
+                android:contentDescription="@string/todo"
+                android:padding="@dimen/_7sdp"
+                android:src="@drawable/icon_notification" />
+
+
+            <ImageView
+                android:id="@+id/imgSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_toStartOf="@id/imgNotification"
+                android:background="@drawable/icons_bg"
+                android:contentDescription="@string/todo"
+                android:padding="@dimen/_7sdp"
+                android:src="@drawable/icon_search" />
+
+            <ImageView
+                android:id="@+id/imgCircleNotification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-18dp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_toEndOf="@id/imgNotification"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/icon_circle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_toStartOf="@id/imgSearch"
+                android:fontFamily="@font/bold"
+                android:text="@string/app_name"
+                android:textSize="@dimen/_18sdp"
+                tools:ignore="RelativeOverlap,TextSizeCheck" />
+
+        </RelativeLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerBanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layoutSearch"
+            android:layout_marginTop="@dimen/_15sdp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerCategories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recyclerBanner"
+            android:layout_marginTop="@dimen/_5sdp" />
+
+        <TextView
+            android:id="@+id/txtSeeAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recyclerCategories"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:fontFamily="@font/regular"
+            android:text="@string/see_all"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp"
+            tools:ignore="TextSizeCheck" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerAllPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtSeeAll"
+            android:layout_marginTop="@dimen/_10sdp" />
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

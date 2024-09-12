@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/_10sdp"
+    tools:context=".activities.InviteFriendsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/bold"
+            android:text="@string/invite_friends"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"
+            tools:ignore="TextSizeCheck" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgFriends"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/icon_friends"
+        tools:ignore="ImageContrastCheck" />
+
+    <Button
+        android:id="@+id/btnInviteFriends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:drawableEnd="@drawable/arrow_right"
+        android:fontFamily="@font/bold"
+        android:text="@string/invite_friends"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12sdp"
+        tools:ignore="TextSizeCheck,DuplicateSpeakableTextCheck,TextContrastCheck,VisualLintButtonSize" />
+
+</RelativeLayout>

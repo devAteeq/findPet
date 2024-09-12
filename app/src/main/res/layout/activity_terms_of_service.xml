@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/_10sdp"
+    tools:context=".activities.TermsOfServiceActivity">
+
+    <RelativeLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/bold"
+            android:text="@string/terms_of_service"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp"
+            tools:ignore="TextSizeCheck" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutHeader"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/medium"
+            android:text="@string/acceptance_of_terms"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:fontFamily="@font/regular"
+            android:text="@string/by_using_app_users_accept_and_agree_to_these_terms_of_services"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/_11sdp"
+            tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:fontFamily="@font/medium"
+            android:text="@string/_2_eligibility"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:fontFamily="@font/regular"
+            android:text="@string/users_must_be_at_least_18_years_old_or_have_parental_consent_to_use_this_app"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/_11sdp"
+            tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:fontFamily="@font/medium"
+            android:text="@string/_3_user_accounts"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:fontFamily="@font/regular"
+            android:text="@string/users_are_responsible_for_maintaining_the_confidentiality_of_their_account"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/_11sdp"
+            tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:fontFamily="@font/medium"
+            android:text="@string/_4_user_conduct"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:fontFamily="@font/regular"
+            android:text="@string/users_agree_not_to_engage_in_harmful_activities_including_unauthorized_access_or_data_manipulation"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/_11sdp"
+            tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+    </LinearLayout>
+
+</RelativeLayout>

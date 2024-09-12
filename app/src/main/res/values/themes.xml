@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FindPet" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/orange</item>
+    </style>
+
+    <style name="Theme.FindPet" parent="Base.Theme.FindPet" />
+
+    <style name="rounded_button">
+
+        <item name="cornerFamily">rounded</item>
+        <item name="background">@drawable/fab_bg</item>
+        <item name="strokeColor">@color/orange</item>
+        <item name="strokeWidth">@dimen/_5sdp</item>
+
+    </style>
+
+</resources>
